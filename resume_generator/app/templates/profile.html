@@ -1,0 +1,73 @@
+<!-- resume_display.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .resume-container {
+            margin: 20px;
+        }
+        .resume-header {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .resume-section {
+            margin-bottom: 20px;
+        }
+        .resume-section h4 {
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container resume-container">
+        <div class="resume-header text-center">
+            <h1 class="display-4">Resume Details</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="resume-section">
+                    <h4>Personal Information</h4>
+                    <p><strong>Name:</strong> {{ profile.name }}</p>
+                    <p><strong>Email:</strong> {{ profile.email }}</p>
+                    <p><strong>Phone:</strong> {{ profile.phone }}</p>
+                </div>
+                <div class="resume-section">
+                    <h4>Education</h4>
+                    <p>{{ profile.education }}</p>
+                </div>
+                <div class="resume-section">
+                    <h4>Achievements</h4>
+                    <p>{{ profile.achievements }}</p>
+                </div>
+                <div class="resume-section">
+                    <h4>Skills</h4>
+                    <p>{{ profile.skills }}</p>
+                </div>
+                <div class="resume-section">
+                    <h4>Work Experience</h4>
+                    <p>{{ profile.workExp }}</p>
+                </div>
+                <div class="resume-section">
+                    <h4>Projects</h4>
+                    <p>{{ profile.projects }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
